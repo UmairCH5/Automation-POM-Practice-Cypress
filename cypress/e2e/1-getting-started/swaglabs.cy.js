@@ -13,7 +13,8 @@ describe('swaglabs', () => {
         cy.get('.shopping_cart_link').should('be.visible').click()
         cy.get('#remove-sauce-labs-fleece-jacket').should('be.visible').click()
         cy.get('#checkout').should('be.visible').click()
-        cy.get('#first-name').type('Umair')
+        cy.get
+        ('#first-name').type('Umair')
         cy.get('#first-name').should('have.value', 'Umair')
         cy.get('#last-name').type('Anwar')
         cy.get('#last-name').should('have.value', 'Anwar')
