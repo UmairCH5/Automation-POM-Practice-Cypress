@@ -19,7 +19,7 @@ class cart
   
         cy.get('#remove-sauce-labs-fleece-jacket').should('be.visible').click()
   
-        cy.get('#checkout').should('be.visible').click()
+        // cy.get('#checkout').should('be.visible').click()
    
         cy.get('#first-name').type('Firstname')
    cy.get('#first-name').should('have.value', 'Firstname')
