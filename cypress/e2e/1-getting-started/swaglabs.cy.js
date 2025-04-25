@@ -2,7 +2,9 @@ describe('swaglabs', () => {
     it('loing and cart', () => {
         cy.visit('https://www.saucedemo.com/')
         cy.get('#user-name').type('standard_user')
+        cy.get('#user-name').should('have.value', 'standard_user')
         cy.get('#password').type('secret_sauce')
+        cy.get('#password').should('have.value', 'secret_sauce')
         cy.get('#login-button').should('be.visible').click()
         cy.get('.product_sort_container').select('Price (low to high)')
         cy.get('#add-to-cart-sauce-labs-onesie').click()
