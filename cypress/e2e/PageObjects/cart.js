@@ -1,4 +1,4 @@
-class Cart{
+export class Cart{
 
 AddtoCart(){
     cy.get('.product_sort_container').select('Price (low to high)')
@@ -22,4 +22,3 @@ AddtoCart(){
 }
 
 }
-export default Cart
